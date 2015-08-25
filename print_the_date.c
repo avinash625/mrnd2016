@@ -14,6 +14,11 @@ void main(void)
     int day,month,year,result,temp;
     printf("enter the date(day-month-year)\t");
     scanf("%d%d%d",&day,&month,&year);
+    if(day<=0 || month<=0 || year <=0)
+    {
+        printf("incorrect date");
+        exit(0);
+    }
     result=is_valid_date(day,month,year);
     if(result==1)
     {
