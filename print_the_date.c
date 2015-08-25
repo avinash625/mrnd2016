@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+//methods or functions 
 int is_valid_date(int day,int month,int year);
 void date_in_words(int day,int month,int year,char months[][10],char one_to_ninetenn[][10],char tens[][10]);
 void print_day(int day,char one_to_nineteen[][10]);
