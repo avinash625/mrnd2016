@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+//methods or functions 
 int is_valid_date(int day,int month,int year);
 void date_in_words(int day,int month,int year,char months[][10],char one_to_ninetenn[][10],char tens[][10]);
 void print_day(int day,char one_to_nineteen[][10]);
@@ -14,7 +14,11 @@ void main(void)
     int day,month,year,result,temp;
     printf("enter the date(day-month-year)\t");
     scanf("%d%d%d",&day,&month,&year);
+<<<<<<< HEAD
     if(day<=0 || month<=0 || year <=0)
+=======
+    if(day<=0 || month<=0 || year<=0)
+>>>>>>> af53b10805d6d51521cd017444bc462e7a69303b
     {
         printf("incorrect date");
         exit(0);
