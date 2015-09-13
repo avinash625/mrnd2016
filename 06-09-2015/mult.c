@@ -18,12 +18,12 @@ int product_by_bitwise(int x, int y)
 {
 	unsigned int result = 0;
 	int flag=0;
-	if(x < 0 && y<0)
+	if(x < 0 && y<0)//checking if both the numbers are -ve 
 	{
 		y=(-1)*y;
 		flag=1;
 	}
-	if(y<0)
+	if(y<0)//checking if the y(second  number) is -ve
 	{
 		y=(-1)*y;
 		flag=1;

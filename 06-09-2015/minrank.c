@@ -1,20 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
 int find_rank(int);
-int factorial(int n);
+int custom_factorial(int n);
 void main(void)
 {
 	int rank,negative;
 	int N;
 	printf("enter the number\t");
 	scanf_s("%d", &N);
-	if (N < 0)
+	if (N < 0)//checking if the given number is negative and making it positive to find the result
 	{
 		negative = 1;
 		N += (2 * -N);
 	}
 	rank = find_rank(N);
-	printf("the rank is %d", rank);
+	printf("the minrank( at index) is %d", rank);
 	_getch();
 }
 int find_rank(int N)
@@ -43,12 +43,12 @@ int find_rank(int N)
 			if (temp[i] > temp[j])
 				perm++;
 		}
-		result += (factorial(perm)*(digits - i - 1));
+		result += (custom_factorial(perm)*(digits - i - 1));
 	}
 	return result;
 
 }
-int factorial(int n)
+int custom_factorial(int n)
 {
 	int i,perm=1;
 	if (n == 0)
